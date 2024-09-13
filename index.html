@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Isto é um comentário HTML -->
+
+    <title>Thais Santos-Silva</title>
+
+    <!-- os próximos duas linhas são somente necessários se quiser usar as funcionalidades do Bootstrap. Veja https://getbootstrap.com/docs/5.3/components/badge/ e as outras possibilidades em Components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <!-- Deve salvar seu arquivo no encoding UTF8-->
+    <meta http-equiv="Content-Type" content="text/html charset=utf-8" >
+    
+    <!-- Tente mudar o CSS --> 
+    <style type="text/css">
+        .custom-navbar {
+         color: #100; /* substitua #000 pela cor desejada */
+        }
+        .cabecalho{
+            width:100;
+            background: url(img/CMa_4.jpg) no-repeat center;
+            background-size: cover;
+            overflow:auto;
+            display: grid;
+            grid-template-columns: 25% 49% 25%;}
+        .cabecalho div
+        {
+            float:right;
+            text-align: center;
+            padding-top: 35%;
+            padding-bottom: 18%;
+        }
+        a.linktitulo:link { 
+            color:rgb(154, 128, 179);
+            text-decoration:none;
+        }
+        a.linktitulo:visited { 
+            color:rgb(154, 128, 179);
+            text-decoration:none;
+        }
+      	h1 { color:whitesmoke; text-align:center; font-size: 60 px; font-weight: 800}
+        h2 { color:whitesmoke; text-align:center; font-size: 40 px;}
+        h3 { color:whitesmoke; text-align:center; font-size: 30 px;}
+      	ul { font-size: 15 px;}
+        h4 { color: rgb(113, 49, 173); text-align:center;font-size: 28 px; font-weight: 700}
+        h5 { color: rgb(31, 30, 30); text-align:center;font-size: 28 px; font-weight: 700}
+        h6 { color: rgb(113, 49, 173); text-align:left;font-size: 24 px; font-weight: 500}
+        h8 { color:whitesmoke; text-align:center; font-size: 28 px;}
+
+
+        .perfil{
+            width: 70%;
+            border-radius: 50%;
+            border: 4px solid rgb(113, 49, 173);
+            text-align:center;
+        }
+
+        .about{
+            width:100
+            background-size: cover;
+            overflow:auto;
+            display: grid;
+            grid-template-columns: 20% 70% 9%;
+            text-align:justify;
+            font-size: 14px; 
+        }
+
+        .fotoabout{
+            width: 70%;
+            border-radius: 10%;
+            border: 4px solid rgb(113, 49, 173);
+            text-align:center;
+        }
+        .divfoto{
+            text-align: center;
+            transform: translateY(20%);
+        }
+
+        .pesquisa{
+
+            width:100;
+            background-size: cover;
+            overflow:auto;
+            display: grid;
+            grid-template-columns: 8% 83% 8%;
+            text-align:justify;
+            font-size: 14px; 
+        }
+
+        .rodape{
+            width:100;
+            height:35;
+            background: url(img/CMa_4.jpg) no-repeat bottom;
+            background-size: cover;
+            overflow:auto;
+            text-align: center;   
+            padding-top: 20px;
+            padding-bottom: 20px;         
+            }
+
+        .rodape p{
+          color:whitesmoke; 
+          text-align:center; 
+          font-size: 50 px;
+          font-weight: 500;
+        }
+
+
+
+
+    </style>
+  </head>
+  
+  <body>
+ <!---------->
+ <header class="header fixed clearfix navbar navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-black bg-light" role="navigation">
+      <div class="container-fluid">
+
+        <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Sobre">Sobre</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pesquisa
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#aglomerados_jovens">Aglomerados jovens</a></li>
+                <li><a class="dropdown-item" href="#CMAR1OB1">CMa R1/ CMa OB1</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#outros_trabalhos">Outros trabalhos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+              </form>
+            </ul>    
+        </div>
+      </div>
+    </nav>
+ </header>
+        <!---------->
+    <div class="cabecalho">
+        <div> </div>
+        <div>           
+            <h1> Thais Santos-Silva </h1> 
+            <p></p>
+            <h2> Pesquisadora de Pós-doutorado </h2>
+            <h3> Instituto de Astronomia Geofísica e Ciências Atmosféricas - USP, São Paulo. </h3>
+            <p> CV: <a class="linktitulo" href="http://lattes.cnpq.br/8986421193241105">lattes.cnpq.br/8986421193241105</a></p>
+        </div>
+        <div>
+            <img class="perfil" src="img/foto_doc_TSS.jpeg" >
+        </div>
+    </div>
+
+    <!---------->
+    <div class="about">
+    <div class="divfoto" > 
+        <img class="fotoabout" src="img/telescopio_2.jpg" >    
+    </div>
+    <div id="Sobre"> 
+         <p></p>
+        <h4>Pós-doutoranda no Instituto de Astronomia Geofísica e Ciências Atmosféricas da Universidade de São Paulo</h4>
+        <p></p>
+        <p> Sou graduada em Física pelo Instituto de Física da Universidade de São Paulo (IFUSP), realizei meu mestrado no Instituto de 
+            Astronomia pelo Instituto de Astronomia, Geofísica e Ciências Atmosféricas (IAG-USP) da mesma universidade sobre o tema 
+            Caracterização de aglomerados estelares jovens. Durante o doutorado, no mesmo instituto, estudei a região de formação estelar 
+            CMa R1 em raios X, utilizando dados do satélite XMM. Neste período realizei um estágio sanduíche no Institut d'Astrophysique 
+            de Paris (IAP - França), onde realizei meu primeiro pós-doutorado. 
+        </p>   
+        <p>No IAP eu adicionei análises no infravermelho próximo e médio para caracterizar CMa R1 e comparações com mapas de CO. 
+            Durante o meu segundo pós-doutorado na Universidade Federal do Rio Grande do Sul iniciei os estudos de aglomerados nesta mesma 
+            região utilizando dados no óptico da missão Gaia. Ao retornar para USP, comecei o curso de Licenciatura em Física, cuja minha monografia foi intitulada "Ensino superior de Astronomia no Brasil: Como se tornar um astrônomo". 
+                Em paralelo realizei outros dois pós-doutorados no IAG, o primeiro deles na colaboração S-PLUS, no qual trabalhei com o 
+                telescópio robótico de 80 cm localizado em Cerro Tololo (Chile). E outro dedicado ao estudo de toda a associação CMa OB1, que 
+                abriga a região de CMa R1, também no óptico. Durante este pós-doutorado, também realizei um estágio no exterior na Eberhard Karls 
+                Universität Tübingen (EKUT - Alemanha), no qual me dediquei à análise de curvas de luz da missão TESS na associação de LUPUS.     
+        </p>        
+        <p> Atualmente estou realizando outro pós-doutorado no IAG, junto ao Telescópio Gigante de Magalhães (GMT), no qual estou desenvolvendo 
+            uma calculadora de tempo de exposição (ETC) para o uso do instrumento MANIFEST. Minha pesquisa é focada no estudo de aglomerados e 
+            associações de estrelas jovens, em diferentes comprimentos de onda, desde infravermelho até raios X, na tentativa de compreender os 
+            primeiros estágios de vida das estrelas e do ambiente em que elas nascem; regiões de formação estelar, aglomerados jovens e associações. 
+            Além da pesquisa, também sou tutora do Curso de Astronomia para Docentes do Ensino Médio, do programa de extensão do IAG, há 4 anos. 
+        </p>       
+    </div>
+    <div> </div>
+
+    </div>
+
+
+    <div class="pesquisa">
+            <div></div>
+            <div id=aglomerados_jovens> 
+                 <p> </p>
+                <h4>Pesquisa</h4>
+                <p></p>
+                <h6 > Caracterização e evolução de aglomerados estelares jovens</h6>
+                <p></p>
+                <p>Estudos sistemáticos de aglomerados estelares jovens podem abordar diretamente diversos problemas astrofísicos fundamentais,
+                     que vão desde a formação e evolução de aglomerados abertos, até problemas mais gerais, como a origem e evolução inicial de 
+                     estrelas e sistemas planetários. Dados no infravermelho próximo podem ser cruciais para revelar uma amostra estelar mais 
+                     completa do que em outras regiões do espectro eletromagnético, uma vez que estes sofrem menor efeito de extinção. Além disso, 
+                     as estruturas dos aglomerados embebidos podem traçar as condições físicas de seus processos de formação de estrelas, uma vez 
+                     que a origem e a evolução dos aglomerados estelares estão relacionadas à distribuição de gás molecular denso em sua nuvem 
+                     parental.
+                </p>
+                <ol>
+                    <li>Santos-Silva, T.,</b> & Gregorio-Hetem, J. (2012) <i>"Characterisation of young stellar clusters"</i>, A&A, 547, A107. 
+                        <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2012A%26A...547A.107S/abstract">2012A&A...547A.107S</a>;</li>
+                    <li>Gregorio-Hetem, J., Hetem, A., <b>Santos-Silva, T.</b>, Fernandes, B. (2015), <i>"Statistical fractal analysis of 25 young 
+                        star clusters"</i>, MNRAS, 448, 2504. <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2015MNRAS.448.2504G/abstract">2015MNRAS.448.2504G</a>.</li>
+                </ol>
+                <p id=CMAR1OB1></p>
+                <h6>Associação estelar CMa OB1 e sua região de formação estelar CMa R1</h6>
+                <p></p>
+                <p>Associações de estrelas podem ser verdadeiros laboratórios para estudar os primeiros estágios de vida das estrelas e 
+                    aglomerados estelares, uma vez que podem abrigar uma grande quantidade desses objetos (Kuhn et al. 2014). Um complexo 
+                    estelar bastante interessante para esse tipo de estudo é associação Canis Major (CMa) OB1, que contém cerca de 200 estrelas 
+                    do tipo B, centenas de estrelas de baixa massa e emissora de Hα conhecidas, localizada a cerca de 1,2 kpc cobrindo uma área 
+                    de aproximadamente 4o x 4o, e baixa fração de estrelas portadoras de discos (Gregório-Hetem et al. 2008, Fernandes et al. 2015; 
+                    Fischer et al. 2016; Santos-Silva et al. 2018; Sewiło et al. 2019, Pettersson & Reipurth 2019).
+                    Nesta associação está localizada uma intrigante região de formação estelar associada a nebulosa em forma de arco Sh 2-296, 
+                    chamada CMa R1 cuja origem não é muito clara. 	 
+                    Motivados pelos resultados obtidos por Gregório-Hetem et al. (2009),  que encontrou, uma centena de estrelas jovens 
+                    emissoras de raios X na região de formação estelar CMa R1, que mostrou conter uma mistura de populações jovens com idades 
+                    inferiores a 5 milhões de anos e mais velhas que 10 milhões de anos e uma baixa fração de estrelas com disco 
+                    (Fernandes et al. 2015), nosso grupo de pesquisa realizou uma série de estudos, em diferentes comprimentos de onda, 
+                    a fim de entender o histórico de formação dessa região, bem como da associação que a abriga.
+                        
+                </p>
+                <ol>
+                    <li><b>Santos-Silva, T.,</b> Gregorio-Hetem, J., Montmerle, T., Fernandes, B., & Stelzer, B. (2018) <i>"Star formation history of Canis Major OB1. 
+                        II. A bimodal X-ray population revealed by XMM-Newton"</i>, A&A, 609, A127. 
+                        <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2018A%26A...609A.127S/abstract">2018A&A...609A.127S</a>;</li>
+                    <li>Fernandes B., Montmerle T., <b>Santos-Silva, T.</b>, Gregorio-Hetem J., (2019), <i>"Runaways and shells around the 
+                        CMa OB1 association"</i>, A&A, 628, A44. <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2019A%26A...628A..44F/abstract">2019A&A...628A..44F</a>;</li>
+                    <li>Gregorio-Hetem J., F. Navarete, Hetem A., <b>Santos-Silva, T.,</b> et al., (2021) <i>"Searching for Active Low-mass Stars in the CMa Star-forming Region: 
+                        Multi-band Photometry with T80S"</i>, AJ, 161, 133. 
+                                <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2021AJ....161..133G/abstract">2021AJ....161..133G</a>;</li>
+                    <li><b>Santos-Silva, T.,</b> Perottoni, H. D., Almeida-Fernandes F., et al., (2021) <i>"Canis Major OB1 stellar group contents revealed by Gaia"</i>, MNRAS, 508, 1033. 
+                                        <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.1033S/abstract">2021MNRAS.508.1033S</a>.</li>
+                                                        
+                </ol>
+
+                <p id=outros_trabalhos></p>
+                <h6>Outros trabalhos</h6>
+                <p></p>
+                <li><a class="linktitulo" href="https://www.splus.iag.usp.br/">Colaboração S-PLUS</a> </li>
+                <p></p>
+              <ol> 
+                    <li>Mendes de Oliveira C., Ribeiro, T., ..., <b>Santos-Silva, T.,</b> et al. (2019) <i>"The Southern Photometric Local Universe Survey (S-PLUS): 
+                      improved SEDs, morphologies, and redshifts with 12 optical filters"</i>,  MNRAS, 489, 241. 
+                        <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.489..241M/abstract">2019MNRAS.489..241M</a>;</li>
+                    <li>Barbosa C. E. , Zaritsky D., ...,  <b>Santos-Silva, T.</b>, et al. (2020), <i>"One Hundred SMUDGes in S-PLUS: Ultra-diffuse Galaxies Flourish in the Field"</i>, 
+                      APJS, 247, 46. <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2020ApJS..247...46B/abstract">2020ApJS..247...46B</a>;</li>
+                    <li> Almeida-Fernandes, F., SamPedro, L., ..., <b>Santos-Silva, T.,</b> et al., (2022) <i>"The Fourth S-PLUS Data Release: 12-filter photometry
+                       covering ~3000 square degrees in the southern hemisphere"</i>, MNRAS, 511, 4590. 
+                                <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2024arXiv240720701H/abstract">2022MNRAS.511.4590A</a>;</li>
+                    <li>Herpich, F. R., Almeida-Fernandes, F., ..., <b>Santos-Silva, T.</b>, et al. (2024) <i>"The Fourth S-PLUS Data Release: 12-filter photometry covering  ∼3000
+                      square degrees in the southern hemisphere"</i>. 
+                                        <a class="linktitulo" href="https://ui.adsabs.harvard.edu/abs/2024FrCh...1279914P/abstract">2024arXiv240720701H</a>.</li>                                                        
+                </ol>
+                <p></p>
+                <li><a class="linktitulo" href="https://www.gmt.iag.usp.br/projetos/manifest#:~:text=O%20Many%2DInstrument%20Fiber%20System,%2Dvermelho%20(IV)%20pr%C3%B3ximo.">MANIFEST - GMT</a> </li>
+                <p></p>
+            </div>
+
+
+
+            
+            <div> </div>
+    </div>
+
+    <div class="rodape" id=contato>
+           
+          <h2> Contato </h2> 
+          <br>
+          <br>
+          <p> Instituto de Astronomia Geofísica e Ciências Atmosféricas - USP</p>
+          <p> Rua do Matão, 1226 - Sala 312 C</p>
+          <p> Cidade Universitária, São Paulo - SP, 05508-090</p>
+          <br>
+          <h3> thaisfi[at]gmail[dot]com </h3>
+
+
+  </div>
+    
+  </body>
+</html>
